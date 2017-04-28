@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+
+	<link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet">
+	<link href="styles/main.css" rel="stylesheet">
+
+	<script src="cordova.js"></script>
+    	<script src="kendo/js/jquery.min.js"></script>
+	<script src="kendo/js/kendo.mobile.min.js"></script>
+	<script src="scripts/app.js"></script>
+    <script type="text/javascript" src="scripts/MWBConfig.js"></script>
+
+</head>
+<body>
+	<div data-role="view">
+
+    <form style="width: 100%; text-align: center;">
+        <input type="button" value="Scan fullscreen" onclick="scanner.startScanning()" style="font-size: 12px; width: 105px; height: 30px; margin-top: 10px;"/>
+        <input type="button" value="Scan in view" onclick="scanner.startScanning(0,4,100,50)" style="font-size: 12px; width: 105px; height: 30px; margin-top: 10px;"/>
+        <input type="button" value="Pause/Resume" onclick="scanner.togglePauseResume()" style="font-size: 12px; width: 105px; height: 30px; margin-top: 10px;"/>
+        <input type="button" value="Close" onclick="scanner.closeScanner()" style="font-size: 12px; width: 105px; height: 30px; margin-top: 10px;"/>
+        <input type="button" value="Flash" onclick="scanner.toggleFlash()" style="font-size: 12px; width: 105px; height: 30px; margin-top: 10px;"/>
+        <input type="button" value="Zoom" onclick="scanner.toggleZoom()" style="font-size: 12px; width: 105px; height: 30px; margin-top: 10px;"/>
+    </form>
+
+	</div>
+</body>
+</html>
